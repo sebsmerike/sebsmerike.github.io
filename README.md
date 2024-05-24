@@ -1,2 +1,2 @@
 # Lord Zevs
-Texto de rpueba para probar el PUSH
+Texto de prueba para probar el PUSH
