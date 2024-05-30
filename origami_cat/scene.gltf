@@ -1,0 +1,217 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 988,
+      "max": [
+        30.821916580200195,
+        21.775760650634766,
+        6.344081878662109
+      ],
+      "min": [
+        -31.06692886352539,
+        -13.500001907348633,
+        -6.344090461730957
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11856,
+      "componentType": 5126,
+      "count": 988,
+      "max": [
+        0.9852235913276672,
+        0.9645253419876099,
+        0.9994534850120544
+      ],
+      "min": [
+        -0.9928718209266663,
+        -1.0,
+        -0.9994534850120544
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 988,
+      "max": [
+        0.999500036239624,
+        0.9971392154693604
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 990,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Evil_Katz (https://sketchfab.com/Evil_Katz)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/origami-cat-e52cb1cd4e38477a88c406f111715d71",
+      "title": "Origami cat"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3960,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7904,
+      "byteOffset": 3960,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 23712,
+      "byteOffset": 11864,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 35576,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "ORIGAMI_Chat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039,
+          0.498039,
+          0.498039,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        -1.1920928955078125e-07,
+        -1.0,
+        0.0,
+        0.0,
+        -8.940696716308594e-08,
+        0.0,
+        1.0,
+        0.0,
+        -1.0,
+        8.940696716308594e-08,
+        -1.1920928955078125e-07,
+        0.0,
+        3.6380149595061084e-06,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "ORIGAMI_Ch"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1.0,
+        1.0587911840678717e-22,
+        1.7763568394002442e-15,
+        0.0,
+        0.0,
+        0.9999999999999964,
+        -5.960464477539041e-08,
+        0.0,
+        -1.7763568394002505e-15,
+        5.960464477539041e-08,
+        0.9999999999999964,
+        0.0,
+        -4.689313982453314e-06,
+        13.5,
+        2.1979215034661984e-06,
+        1.0
+      ],
+      "name": "3DSMeshMatrix"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
