@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    
+    <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- demo Texto -->
+        <a-entity
+            text="value: Test 01!; color: #F0F"
+            position="0 0 0"
+            scale="1.5 1.5 1.5"></a-entity>
+        
+        <!-- Imagen personalizada -->
+        <a-marker preset="hiro">
+            <!-- Modelo personalizado -->
+            <a-entity
+                position="0 0 0"
+                scale="0.017 0.017 0.017"
+                gltf-model="https://sebsmerike.github.io/origami_cat/scene.gltf"
+            ></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+
+    </a-scene>
+    </body>
+</html>
