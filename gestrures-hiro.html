@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- gesture management -->
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+    <script src="gesture-detector.js"></script>
+    <script src="gesture-handler.js"></script>    
+    
+    <body style="margin : 0px; overflow: hidden;">
+    <a-scene arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+        embedded
+        renderer="logarithmicDepthBuffer: true;"
+        vr-mode-ui="enabled: false"
+        gesture-detector
+        id="scene"
+    >
+        <!-- demo Texto -->
+        <a-entity
+            text="value: Test 01!; color: #F0F"
+            position="0 0 0"
+            scale="1.5 1.5 1.5"></a-entity>
+        <!-- Imagen personalizada -->
+        <a-marker
+    preset="hiro"
+    raycaster="objects: .clickable"
+    emitevents="true"
+    cursor="fuse: false; rayOrigin: mouse;"
+    id="markerA"
+  >
+            <!-- Modelo personalizado -->
+            <a-entity
+                position="0 0 0"
+                scale="0.017 0.017 0.017"
+                gltf-model="https://sebsmerike.github.io/origami_cat/scene.gltf"
+                class="clickable"
+                gesture-handler
+            ></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+
+    </a-scene>
+    </body>
+</html>
