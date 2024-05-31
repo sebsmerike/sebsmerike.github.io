@@ -10,13 +10,6 @@
     <script src="gesture-handler.js"></script>    
     
     <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded>
-        <!-- demo Texto -->
-        <a-entity
-            text="value: Test 01!; color: #F0F"
-            position="0 0 0"
-            scale="1.5 1.5 1.5"></a-entity>
-   </a-scene> 
     <a-scene arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
         embedded
         renderer="logarithmicDepthBuffer: true;"
@@ -24,6 +17,11 @@
         gesture-detector
         id="scene"
     >
+        <!-- demo Texto -->
+        <a-entity
+            text="value: Test 01!; color: #F0F"
+            position="0 0 0"
+            scale="1.5 1.5 1.5"></a-entity>
         <!-- Imagen personalizada -->
         <a-marker-camera preset='custom' url="https://sebsmerike.github.io/pattern-elfene_complete.patt" type="pattern" 
             raycaster="objects: .clickable"
